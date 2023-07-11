@@ -1,0 +1,30 @@
+
+section.main__overview
+  .overview__content--top
+    h1.overview__title <strong>Develop faster.</strong>Run anywhere.
+    h3.overview__sub-title The most-used Tool in Stack Overflow’s 2023 Developer Survey
+    button.button.button--padding-l.button--primary
+      .button__content-box
+        p Dowload Docker Desktop 
+        .button__sub-content
+          i.fa-brands.fa-windows
+          p window
+    .overview__sub-link
+      +linkIcon("#", "Apple Chip", "fa-brands fa-apple")(class="link link--underline link--white link--box")
+      +linkIcon("#", "Linux", "fa-brands fa-linux")(class="link link--underline link--white link--box")
+      +linkIcon("#", "Intel Chip", "fa-brands fa-apple")(class="link link--underline link--white link--box")
+  .overview__featured-box
+    img.featured__img(src="./assets/images/DCLA-featured-box.png", alt="DCLA featured")
+    .featured__content-box
+      h3 JOIN US
+      h2.featured__title DockerCon 2023
+      p.featured__description Don’t miss this celebration of the global Docker community. Hands-on technical sessions, hallway tracks, networking, and much more!
+      +linkIcon("#", "learn more", "fa-solid fa-arrow-right")(class="link link--underline link--box link--blue")
+  .overview__get-started
+    h2.get-started__title Accelerate how you build, share, and run modern applications.
+    .get-started__installed
+      +installedNumber("18 milion", 'developers')
+      +installedNumber("7 milion", 'applications')
+      +installedNumber("13 bilion", 'monthly image downloads')
+    button.button.button--primary.text--bold Get started
+

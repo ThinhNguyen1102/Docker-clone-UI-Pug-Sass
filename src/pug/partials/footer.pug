@@ -1,0 +1,13 @@
+- var products = ["Docker Personal", "Docker Pro", "Docker Team", "Docker Business", "Telepresence for Docker", "Docker Scout Early Access", "Desktop vs Docker Engine", "Docker Desktop", "Docker Hub", "Docker Extensions", "Secure Software Supply", "Chain", "Container Runtime", "Developer Tools", "Trusted Content", "Docker Product Roadmap", "Support"]
+- var developers = ["Docs", "Getting Started", "Community", "Open Source", "Preview Program", "System Status"]
+- var pricing = ["FAQ", "Docker Verified Publisher", "Partners"]
+- var aboutUs = ["What is a Container", "Why Docker", "Events", "Swag Store", "Newsroom", "Careers", "Contact Us", "Customers", "Trademark Guidelines"]
+
+footer
+  img.footer__logo(src="./assets/images/docker-nav-logo.png", alt="docker logo")
+  .footer__link-group
+    +footerLinkList("Products", products)
+    +footerLinkList("Developers", developers)
+    +footerLinkList("Pricing", pricing)
+    +footerLinkList("About Us", aboutUs)
+  

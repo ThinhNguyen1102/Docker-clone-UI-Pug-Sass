@@ -1,0 +1,15 @@
+@import "button.scss";
+@import "link.scss";
+
+.text--bold {
+  font-weight: bold;
+}
+
+.image--left {
+  @include flex-center;
+}
+
+.image--right {
+  @include flex-center;
+  flex-direction: row-reverse;
+}

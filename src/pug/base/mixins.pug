@@ -1,0 +1,39 @@
+mixin linkList()
+  ul(class!=attributes.class)
+    if block
+      block
+
+mixin linkItemNav(href, title)
+  li.nav__link-wrapper
+    a(class!=attributes.class, href=href)=title
+    i.fa-solid.fa-chevron-down
+
+mixin linkIcon(href, title, iconClass)
+  a(href=href, class!=attributes.class)
+    i(class=iconClass)
+    p= title 
+
+mixin installedNumber(number, title)
+  .installed__wrapper 
+    h2.installed-number= number
+      <i class="fa-solid fa-plus"></i>
+    p.installed-title= title
+
+mixin benefitComponent(title, imageUrl, contents)
+  div(class!=attributes.class)
+    .benefit__image-box
+      img(src=imageUrl, alt=title)
+    .benefit__sub-content
+      .sub-content__title= title
+      ul.sub-content__list
+        each item in contents
+          li 
+            p= item
+
+mixin footerLinkList(title, list)
+  .link-group__wrapper 
+    h3.link-group__title= title
+    ul.link-group__list
+      each item in list
+        li
+          a(href="#", class="link link--underline link--blue")= item  

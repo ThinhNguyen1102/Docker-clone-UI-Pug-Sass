@@ -1,0 +1,37 @@
+.link {
+  font-size: 1.6rem;
+  transition: all 0.25s linear;
+}
+
+.link--underline:hover {
+  text-decoration: underline;
+}
+
+.link--bold {
+  font-weight: 500;
+}
+
+.link--blue {
+  color: $color--vivid-cyan-blue;
+}
+
+.link--blue:hover {
+  color: $color--vivid-cyan-blue-hover;
+}
+
+.link--white {
+  color: $color--white-gray;
+}
+
+.link--white:hover {
+  color: $color--white;
+}
+
+.link--box * {
+  color: $color--white-gray;
+}
+
+.link--box {
+  @include flex-center;
+  gap: 1rem;
+}

@@ -1,0 +1,16 @@
+-var navLeftLinks = ["Products", "Developers", "Pricing", "Blog", "About Us", "Partners"]
+
+header
+  img.header__logo(src="./assets/images/docker-nav-logo.png", alt="docker logo")
+  .header__menu-icon
+    i.fa-solid.fa-bars
+  nav.header__nav
+    +linkList()(class="nav__content--left")
+      each item in navLeftLinks
+        +linkItemNav("#", item)(class="link link--white link--bold")
+    +linkList()(class="nav__content--right")
+      i.fa-solid.fa-magnifying-glass
+      button.button.button--transparent.button--padding-s
+        p Sign in
+      button.button.button--outline.button--transparent
+        p.text-bold Get Started

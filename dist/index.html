@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docker: Accelerated, Containerized Application Development</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <img
+          class="header__logo"
+          src="./assets/images/docker-nav-logo.png"
+          alt="docker logo"
+        />
+        <div class="header__menu-icon"><i class="fa-solid fa-bars"></i></div>
+        <nav class="header__nav">
+          <ul class="nav__content--left">
+            <li class="nav__link-wrapper">
+              <a class="link link--white link--bold" href="#">Products</a
+              ><i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li class="nav__link-wrapper">
+              <a class="link link--white link--bold" href="#">Developers</a
+              ><i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li class="nav__link-wrapper">
+              <a class="link link--white link--bold" href="#">Pricing</a
+              ><i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li class="nav__link-wrapper">
+              <a class="link link--white link--bold" href="#">Blog</a
+              ><i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li class="nav__link-wrapper">
+              <a class="link link--white link--bold" href="#">About Us</a
+              ><i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li class="nav__link-wrapper">
+              <a class="link link--white link--bold" href="#">Partners</a
+              ><i class="fa-solid fa-chevron-down"></i>
+            </li>
+          </ul>
+          <ul class="nav__content--right">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <button class="button button--transparent button--padding-s">
+              <p>Sign in</p>
+            </button>
+            <button class="button button--outline button--transparent">
+              <p class="text-bold">Get Started</p>
+            </button>
+          </ul>
+        </nav>
+      </header>
+      <section class="main_overview">
+        <div class="overview__content--top">
+          <h1 class="overview__title">
+            <strong>Develop faster.</strong>Run anywhere.
+          </h1>
+          <h3 class="overview__sub-title">
+            The most-used Tool in Stack Overflow’s 2023 Developer Survey
+          </h3>
+          <button class="button button--padding-l button--primary">
+            <div class="button__content-box">
+              <p>Dowload Docker Desktop</p>
+              <div class="button__sub-content">
+                <i class="fa-brands fa-windows"></i>
+                <p>window</p>
+              </div>
+            </div>
+          </button>
+          <div class="overview__sub-link">
+            <a class="link link--underline link--white link--box" href="#"
+              ><i class="fa-brands fa-apple"></i>
+              <p>Apple Chip</p></a
+            ><a class="link link--underline link--white link--box" href="#"
+              ><i class="fa-brands fa-linux"></i>
+              <p>Linux</p></a
+            ><a class="link link--underline link--white link--box" href="#"
+              ><i class="fa-brands fa-apple"></i>
+              <p>Intel Chip</p></a
+            >
+          </div>
+        </div>
+        <div class="overview__featured-box">
+          <img
+            class="featured__img"
+            src="./assets/images/DCLA-featured-box.png"
+            alt="DCLA featured"
+          />
+          <div class="featured__content-box">
+            <h3>JOIN US</h3>
+            <h2 class="featured__title">DockerCon 2023</h2>
+            <p class="featured__description">
+              Don’t miss this celebration of the global Docker community.
+              Hands-on technical sessions, hallway tracks, networking, and much
+              more!
+            </p>
+            <a class="link link--underline link--box link--blue" href="#"
+              ><i class="fa-solid fa-arrow-right"></i>
+              <p>learn more</p></a
+            >
+          </div>
+        </div>
+        <div class="overview__get-started">
+          <h2 class="get-started__title">
+            Accelerate how you build, share, and run modern applications.
+          </h2>
+          <div class="get-started__installed">
+            <div class="installed__wrapper">
+              <h2 class="installed-number">
+                18 milion<i class="fa-solid fa-plus"></i>
+              </h2>
+              <p class="installed-title">developers</p>
+            </div>
+            <div class="installed__wrapper">
+              <h2 class="installed-number">
+                7 milion<i class="fa-solid fa-plus"></i>
+              </h2>
+              <p class="installed-title">applications</p>
+            </div>
+            <div class="installed__wrapper">
+              <h2 class="installed-number">
+                13 bilion<i class="fa-solid fa-plus"></i>
+              </h2>
+              <p class="installed-title">monthly image downloads</p>
+            </div>
+          </div>
+          <button class="button button--primary text--bold">Get started</button>
+        </div>
+      </section>
+      <section class="main__benefit">
+        <div class="benefit__general">
+          <h2 class="benefit__title">
+            Docker makes development efficient and predictable
+          </h2>
+          <p class="benefit__description">
+            Docker takes away repetitive, mundane configuration tasks and is
+            used throughout the development lifecycle for fast, easy and
+            portable application development – desktop and cloud. Docker’s
+            comprehensive end to end platform includes UIs, CLIs, APIs and
+            security that are engineered to work together across the entire
+            application delivery lifecycle.
+          </p>
+        </div>
+        <div class="benefit__content">
+          <div class="benefit__wrapper image--right">
+            <div class="benefit__image-box">
+              <img src="./assets/images/Docker-build.png" alt="Build" />
+            </div>
+            <div class="benefit__sub-content">
+              <div class="sub-content__title">Build</div>
+              <ul class="sub-content__list">
+                <li>
+                  <p>
+                    Get a head start on your coding by leveraging Docker images
+                    to efficiently develop your own unique applications on
+                    Windows and Mac. Create your multi-container application
+                    using Docker Compose.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Integrate with your favorite tools throughout your
+                    development pipeline – Docker works with all development
+                    tools you use including VS Code, CircleCI and GitHub.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Package applications as portable container images to run in
+                    any environment consistently from on-premises Kubernetes to
+                    AWS ECS, Azure ACI, Google GKE and more.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="benefit__wrapper image--left">
+            <div class="benefit__image-box">
+              <img src="./assets/images/Moby-share.png" alt="Share" />
+            </div>
+            <div class="benefit__sub-content">
+              <div class="sub-content__title">Share</div>
+              <ul class="sub-content__list">
+                <li>
+                  <p>
+                    Leverage Docker Trusted Content, including Docker Official
+                    Images and images from Docker Verified Publishers from the
+                    Docker Hub repository.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Innovate by collaborating with team members and other
+                    developers and by easily publishing images to Docker Hub.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Personalize developer access to images with roles based
+                    access control and get insights into activity history with
+                    Docker Hub Audit Logs.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="benefit__wrapper image--right">
+            <div class="benefit__image-box">
+              <img src="./assets/images/Moby-run.png" alt="Run" />
+            </div>
+            <div class="benefit__sub-content">
+              <div class="sub-content__title">Run</div>
+              <ul class="sub-content__list">
+                <li>
+                  <p>
+                    Deliver multiple applications hassle free and have them run
+                    the same way on all your environments including design,
+                    testing, staging and production – desktop or cloud-native.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Deploy your applications in separate containers
+                    independently and in different languages. Reduce the risk of
+                    conflict between languages, libraries or frameworks.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Speed development with the simplicity of Docker Compose CLI
+                    and with one command, launch your applications locally and
+                    on the cloud with AWS ECS and Azure ACI.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <img
+          class="footer__logo"
+          src="./assets/images/docker-nav-logo.png"
+          alt="docker logo"
+        />
+        <div class="footer__link-group">
+          <div class="link-group__wrapper">
+            <h3 class="link-group__title">Products</h3>
+            <ul class="link-group__list">
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Docker Personal</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Docker Pro</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Docker Team</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Docker Business</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Telepresence for Docker</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Docker Scout Early Access</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Desktop vs Docker Engine</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Docker Desktop</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Docker Hub</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Docker Extensions</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Secure Software Supply</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#">Chain</a>
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Container Runtime</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Developer Tools</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Trusted Content</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Docker Product Roadmap</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#">Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="link-group__wrapper">
+            <h3 class="link-group__title">Developers</h3>
+            <ul class="link-group__list">
+              <li>
+                <a class="link link--underline link--blue" href="#">Docs</a>
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Getting Started</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Community</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Open Source</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Preview Program</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >System Status</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="link-group__wrapper">
+            <h3 class="link-group__title">Pricing</h3>
+            <ul class="link-group__list">
+              <li>
+                <a class="link link--underline link--blue" href="#">FAQ</a>
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Docker Verified Publisher</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#">Partners</a>
+              </li>
+            </ul>
+          </div>
+          <div class="link-group__wrapper">
+            <h3 class="link-group__title">About Us</h3>
+            <ul class="link-group__list">
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >What is a Container</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Why Docker</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#">Events</a>
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Swag Store</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#">Newsroom</a>
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#">Careers</a>
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Customers</a
+                >
+              </li>
+              <li>
+                <a class="link link--underline link--blue" href="#"
+                  >Trademark Guidelines</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

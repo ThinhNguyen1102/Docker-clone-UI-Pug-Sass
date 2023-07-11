@@ -1,0 +1,38 @@
+.button {
+  border-radius: 0.5rem;
+  @include flex-center;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  color: $color--white;
+}
+
+.button * {
+  color: $color--white;
+}
+
+.button--outline {
+  border: 0.2rem white solid;
+}
+
+.button--padding-s {
+  padding: 0.5rem 1rem;
+}
+.button--padding-l {
+  padding: 2rem 4rem;
+}
+
+.button--transparent {
+  background-color: transparent;
+}
+
+.button--circle {
+  border-radius: 50%;
+}
+
+.button--primary {
+  background-color: $color--secondary-blue;
+}
+
+.button--primary:hover {
+  background-color: $color--secondary-blue-hover;
+}
